@@ -1,173 +1,118 @@
-#🚗 Car Insurance Claim Prediction
+# 🚗 Car Insurance Claim Prediction
 
-A machine learning project that predicts whether a policyholder is likely to file a car insurance claim in the next policy period based on vehicle, policy, and demographic features.
+A machine learning project that predicts whether a policyholder will file a **car insurance claim in the next policy period** using demographic, vehicle, and policy-related features.
 
-The project demonstrates a complete machine learning workflow, including data exploration, preprocessing, model development, and deployment using Streamlit.
+The project demonstrates a complete machine learning workflow including **data exploration, preprocessing, model training, and deployment using Streamlit**.
 
-#📌 Project Objective
+---
 
-Insurance companies need to estimate the likelihood of claims to:
+## 📌 Project Objective
 
-Reduce financial risk
+Insurance companies need to estimate the likelihood of claims in order to:
 
-Detect potential fraud
-
-Optimize insurance premiums
-
-Improve operational efficiency in claims processing
+- Reduce financial risk  
+- Detect potential fraud  
+- Optimize insurance premiums  
+- Improve operational efficiency in claims processing  
 
 This project builds a predictive model that estimates the probability of a customer filing an insurance claim.
 
-🗂 Project Structure
-car-insurance-claim-prediction
-│
-├── data
-│   └── raw
-│       ├── train.csv
-│       ├── test.csv
-│       └── sample_submission.csv
-│
-├── notebooks
-│   ├── 01_data_loading.ipynb
-│   ├── 02_eda.ipynb
-│   └── 03_preprocessing.ipynb
-│
-├── models
-│   └── trained models
-│
-├── outputs
-│   └── visualization results
-│
-├── pages
-│   └── Streamlit UI pages
-│
-├── Main.py
-├── requirements.txt
-└── README.md
-📊 Dataset
+---
 
-The dataset contains policyholder, vehicle, and insurance policy information.
+## 📊 Dataset
 
-Target Variable : 
-is_claim
+The dataset contains information about **policyholders, vehicles, and insurance policies**.
+
+### Target Variable
+
+`is_claim`
 
 Binary classification:
 
-0 → No claim
-1 → Claim filed
+- **0 → No claim**
+- **1 → Claim filed**
 
-Example features include:
-Policy tenure
+### Example Features
 
-Age of car
+- Policy tenure  
+- Age of car  
+- Age of policyholder  
+- Population density  
+- Vehicle segment  
+- Fuel type  
+- Engine specifications  
+- Safety features  
+- NCAP safety rating  
 
-Age of policyholder
+---
 
-Fuel type
+## 🔎 Exploratory Data Analysis (EDA)
 
-Engine specifications
+EDA was performed to understand the dataset and identify patterns.
 
-Safety features
+### Analysis Includes
 
-Vehicle segment
+- Feature distribution analysis  
+- Claim distribution visualization  
+- Correlation analysis  
+- Detection of class imbalance  
 
-NCAP safety rating
+Visualizations were created using **Matplotlib and Seaborn**.
 
-🔎 Exploratory Data Analysis
+---
 
-The EDA notebook analyzes:
+## 🧹 Data Preprocessing
 
-Class distribution of insurance claims
+### Steps Performed
 
-Feature distributions
+- Handling categorical variables  
+- Feature grouping and transformation  
+- Preparing training features and labels  
+- Structuring the dataset for machine learning models  
 
-Potential correlations between features
+---
 
-Dataset structure and missing values
+## 🤖 Machine Learning Model
 
-Example analysis includes visualization of claim distribution using Seaborn countplots.
+### Model Used
 
-🧹 Data Preprocessing
+- **Random Forest Classifier**
 
-Data preprocessing steps include:
+Tree-based models are effective for structured datasets because they handle:
 
-Feature grouping
+- Non-linear relationships  
+- Mixed feature types  
+- Feature interactions  
 
-Handling categorical variables
+---
 
-Preparing dataset for model training
+## 📈 Model Evaluation
 
-Feature selection
+The model was evaluated using the following metrics:
 
-The dataset is transformed into a format suitable for machine learning models.
+- Accuracy  
+- Precision  
+- Recall  
+- F1 Score  
+- ROC-AUC  
 
-🤖 Machine Learning Model
+These metrics help measure how effectively the model predicts insurance claims.
 
-The project uses:
+---
 
-RandomForestClassifier
+## 🌐 Streamlit Application
 
-Tree-based models are well suited for structured insurance datasets because they handle:
+A **Streamlit web application** allows users to input policyholder and vehicle details to generate claim predictions.
 
-Non-linear relationships
+### Run the Application
 
-Mixed feature types
-
-Feature interactions
-
-📈 Model Evaluation
-
-Model performance is evaluated using common classification metrics:
-
-Accuracy
-
-Precision
-
-Recall
-
-F1 Score
-
-ROC-AUC
-
-These metrics help assess how well the model identifies potential insurance claims.
-
-🌐 Deployment
-
-A Streamlit application is included to allow users to input policy and vehicle details and obtain claim predictions.
-
-Run the app with:
-
+```bash
 streamlit run Main.py
+```
 
-The application launches locally in the browser.
 
-🛠 Tech Stack
+# 👨‍💻 Author
 
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Scikit-learn
-Random Forest
-Streamlit
-
-🚀 Future Improvements
-
-Potential improvements include:
-
-Hyperparameter tuning
-
-Feature importance analysis
-
-Handling class imbalance
-
-Trying additional models such as XGBoost
-
-Cloud deployment
-
-👨‍💻 Author
-
-Ajey Jha
+## Ajey Raj Jha
 
 Data Analytics | Machine Learning | Python
