@@ -1,10 +1,10 @@
-🚗 Car Insurance Claim Prediction
+#🚗 Car Insurance Claim Prediction
 
 A machine learning project that predicts whether a policyholder is likely to file a car insurance claim in the next policy period based on vehicle, policy, and demographic features.
 
 The project demonstrates a complete machine learning workflow, including data exploration, preprocessing, model development, and deployment using Streamlit.
 
-📌 Project Objective
+#📌 Project Objective
 
 Insurance companies need to estimate the likelihood of claims to:
 
